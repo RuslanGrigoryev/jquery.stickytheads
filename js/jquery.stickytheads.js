@@ -22,7 +22,13 @@ function stickyTheads(stickies) {
 	
 			_obj.scroll();
 		
-		});			  
+		});		
+
+		$(window).off("resize.stickies").on("resize.stickies", function() {
+	
+			_obj.resize();
+		
+		});	  
 	}
 			
 	_obj.scroll = function() {
@@ -53,5 +59,15 @@ function stickyTheads(stickies) {
 				}				
 			}
 		});			
+	}
+
+	_obj.resize = function() {
+
+		stickies.each(function(i){	
+
+			var thisThead = $(this);
+			thisThead.css('width', thisThead.closest('table').width() + 'px')
+		});
+
 	}
 }
