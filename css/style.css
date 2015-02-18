@@ -1,3 +1,5 @@
+/*Beauty important styles*/
+
 table.table {
 	margin-bottom: 100px;
 }
@@ -18,4 +20,20 @@ table.table:nth-child(4) thead tr{
 }
 table.table:nth-child(5) thead tr{
 	background: #d35400;
+}
+
+/*Important styles*/
+
+table.table thead {
+	position: relative;
+	z-index: 1;
+}
+table.table thead.thead_fixed {
+	position: fixed;
+	top: 0;
+	z-index: 0;
+	display: table;
+}
+table.table thead.thead_fixed.absolute {
+	position: absolute;
 }
