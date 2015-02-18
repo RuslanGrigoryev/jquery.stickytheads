@@ -1,0 +1,21 @@
+table.table {
+	margin-bottom: 100px;
+}
+table.table thead tr th {
+	padding: 10px 20px;
+}
+table.table:first-child thead tr {
+	background: #2ecc71;
+}
+table.table:nth-child(2) thead tr {
+	background: #16a085;
+}
+table.table:nth-child(3) thead tr {
+	background: #8e44ad;
+}
+table.table:nth-child(4) thead tr{
+	background: #e74c3c;
+}
+table.table:nth-child(5) thead tr{
+	background: #d35400;
+}
