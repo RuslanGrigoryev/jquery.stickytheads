@@ -1,5 +1,5 @@
 /*TODO: 
-	1. change thead width, while browser resising
+	1. change thead width, while browser resising  - fix
 	2. make a $ plugin
 */
 
